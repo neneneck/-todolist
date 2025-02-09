@@ -92,12 +92,12 @@ function App() {
                   value={editInput}
                   onChange={(e) => setEditInput(e.target.value)}
                 />
-                <button onClick={() => updateTodo(index)}>저장하긩</button>
+                <button onClick={() => updateTodo(index)}>저장</button>
               </>
             ) : (
               <>
                 <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span>
-                <button onClick={() => startEditing(index)}>수정</button>
+                <button onClick={() => startEditing(index)}>수정하긩</button>
                 <button onClick={() => deleteTodo(index)}>삭제</button>
               </>
             )}
