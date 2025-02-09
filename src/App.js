@@ -15,12 +15,12 @@ function App() {
 
   // 로컬 스토리지에 저장하기
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos)); //스토리지에 저장되게(남게하는 함수)
   }, [todos]);
 
   const addTodo = () => {
     if (input) {
-      setTodos({
+      setTodos({ 
         ...todos,
         [selectedDate]: [...(todos[selectedDate] || []), { text: input, completed: false }]
       });
@@ -92,7 +92,7 @@ function App() {
                   value={editInput}
                   onChange={(e) => setEditInput(e.target.value)}
                 />
-                <button onClick={() => updateTodo(index)}>저장</button>
+                <button onClick={() => updateTodo(index)}>저장하긩</button>
               </>
             ) : (
               <>
